@@ -23,9 +23,6 @@ body {
   padding: 0;
 }
 
-label {
-
-}
 
 input:focus {
   outline: none;

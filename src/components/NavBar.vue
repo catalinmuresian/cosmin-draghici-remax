@@ -25,6 +25,8 @@
   position: fixed;
   top: 0;
   > div {
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     height: 100%;
     align-items: flex-start;

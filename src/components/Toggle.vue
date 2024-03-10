@@ -40,6 +40,7 @@ export default {
 .container {
   display: flex;
   align-items: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
 }
 .label {
   margin-left: 12px;
@@ -83,7 +84,7 @@ export default {
   background-color: var(--light-gray);
   /* In case the label gets really long, the toggle shouldn't shrink. */
   flex-shrink: 0;
-  /*transition: background-color 0.25s ease-in-out;*/
+  transition: background-color 0.25s ease-in-out;
 }
 .switch::before {
   content: "";
