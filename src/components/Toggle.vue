@@ -30,7 +30,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+@media only screen and (min-width: 768px) {
+  .container {
+    cursor: pointer;
+  }
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -104,8 +110,6 @@ export default {
 #cheap:checked + .switch {
   background-color: #AA5052;
 }
-
-
 .input:checked + .switch::before {
   border-color: var(--teal);
   /* Move the inner circle to the right */

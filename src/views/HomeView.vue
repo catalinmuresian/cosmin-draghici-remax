@@ -1,40 +1,35 @@
 <template>
-  <div>
-    <NavBar/>
-    <div class="main-page">
-      <div>
-        <Toggle
-            id="good"
-            @toggle="update"
-            label="Pretul cerut"
-            :checked="list.good">
-        </Toggle>
-      </div>
-      <div>
-        <Toggle
-            id="fast"
-            @toggle="update"
-            label="Timpul scurt"
-            :checked="list.fast">
-        </Toggle>
-      </div>
-      <div>
-        <Toggle
-            id="cheap"
-            @toggle="update"
-            label="Nevoie de a vinde"
-            :checked="list.cheap">
-        </Toggle>
-      </div>
-
-
+  <div class="main-page">
+    <div>
+      <Toggle
+          id="cheap"
+          @toggle="update"
+          label="Nevoia"
+          :checked="list.cheap">
+      </Toggle>
     </div>
+    <div>
+      <Toggle
+          id="fast"
+          @toggle="update"
+          label="Timpul"
+          :checked="list.fast">
+      </Toggle>
+    </div>
+    <div>
+      <Toggle
+          id="good"
+          @toggle="update"
+          label="Pretul"
+          :checked="list.good">
+      </Toggle>
+    </div>
+
   </div>
 </template>
 
 <script setup>
 import Toggle from '../components/Toggle'
-import NavBar from '../components/NavBar'
 import {ref} from "vue";
 
 let state = []
@@ -66,13 +61,20 @@ function update ({key}) {
 
 <style lang="scss">
 .main-page {
-  margin: auto;
   width: 221px;
-  height: 100vh;
+  margin: 350px auto auto;
   justify-content: center;
   gap: 20px;
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-page {
+    margin: auto;
+    height: 100vh;
+  }
+
 }
 
 </style>

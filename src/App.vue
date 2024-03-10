@@ -1,7 +1,12 @@
 <template>
+  <NavBar/>
+
   <router-view/>
 </template>
+<script setup>
+import NavBar from './components/NavBar'
 
+</script>
 <style lang="scss">
 #app {
   font-family: Jua, sans-serif;
@@ -16,6 +21,26 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+label {
+
+}
+
+input:focus {
+  outline: none;
+
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+*:focus {
+  outline: none;
 }
 
 </style>
