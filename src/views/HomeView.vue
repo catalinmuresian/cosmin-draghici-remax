@@ -61,7 +61,7 @@ function update ({key}) {
 
 <style lang="scss">
 .main-page {
-  width: 221px;
+  width: 126px;
   margin: 350px auto auto;
   justify-content: center;
   gap: 20px;
