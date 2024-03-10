@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunktoggle_switch"]=self["webpackChunktoggle_switch"]||[]).push([[594],{603:function(t,n,u){u.r(n),u.d(n,{default:function(){return h}});var e=u(6768);const s={class:"about"},a=(0,e.Lk)("h1",null,"This is an about page",-1),c=[a];function r(t,n){return(0,e.uX)(),(0,e.CE)("div",s,c)}var i=u(1241);const o={},l=(0,i.A)(o,[["render",r]]);var h=l}}]);
-//# sourceMappingURL=about.975bd819.js.map
